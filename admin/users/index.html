@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>管理者ページ</title>
+	<title>ユーザ一覧ページ</title>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -24,9 +24,6 @@
 				<button type="button" class="btn btn-success col-xs-10 col-sm-10">管理者ページ</button>
 			</div>
 			<div class="col-xs-offset-2 col-sm-offset-2 col-sm-10">
-				<button type="button" class="btn btn-success col-xs-10 col-sm-10">シフト作成</button>
-			</div>
-			<div class="col-xs-offset-2 col-sm-offset-2 col-sm-10">
 				<button type="button" class="btn btn-success col-xs-10 col-sm-10">新規登録認証</button>
 			</div>
 		</div>
@@ -38,5 +35,91 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	
+	<div class="container">	  
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<!-- Nav tabs category -->
+			<ul class="nav nav-tabs faq-cat-tabs">
+				<li class="active"><a href="#faq-cat-1" data-toggle="tab">男性</a></li>
+				<li><a href="#faq-cat-2" data-toggle="tab">女性</a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content faq-cat-content">
+				<div class="tab-pane active in fade" id="faq-cat-1">
+					<div class="panel-group" id="accordion-cat-1">
+						<div class="panel panel-default panel-faq">
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
+									<h4 class="panel-title">
+										<!-- 名前 -->
+										浜田浩輔
+										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+									</h4>
+								</a>
+							</div>
+							<div id="faq-cat-1-sub-1" class="panel-collapse collapse">
+								<div class="panel-body">
+								<!-- 本文-->
+								兄貴だよー
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default panel-faq">
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2">
+									<h4 class="panel-title">
+										<!-- 名前 -->
+										hoge
+										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+									</h4>
+								</a>
+							</div>
+							<div id="faq-cat-1-sub-2" class="panel-collapse collapse">
+								<div class="panel-body">
+								<!-- 本文-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="faq-cat-2">
+					<div class="panel-group" id="accordion-cat-2">
+						<div class="panel panel-default panel-faq">
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-1">
+									<h4 class="panel-title">
+										<!-- 名前 -->
+										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+									</h4>
+								</a>
+							</div>
+							<div id="faq-cat-2-sub-1" class="panel-collapse collapse">
+								<div class="panel-body">
+									<!-- 本文 -->
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default panel-faq">
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-2">
+									<h4 class="panel-title">
+										<!-- 名前 -->
+										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+									</h4>
+								</a>
+							</div>
+							<div id="faq-cat-2-sub-2" class="panel-collapse collapse">
+								<div class="panel-body">
+									<!-- 本文 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
 </body>
 </html>
