@@ -1,0 +1,57 @@
+$themecolor :#F0A986;
+$buttoncolor : #D9654D;
+$backcolor : #D9CCC0;
+
+@mixin line {
+	margin-top  : 1%;
+	font-size : 20px; 
+}
+		
+html,body{
+	width : 100%;
+	height: 100%;
+	background-color: $backcolor;
+}
+	#header{
+		background-color: $themecolor;
+		height : 12%;
+		
+			
+				#telop {
+					@include line; 
+					float : left;
+							
+				}
+				#logout {
+					@include line;
+					float : right;
+					height: 70%;
+					margin-right: 3%;
+					border-radius : 5px;
+					background-color :$buttoncolor ;
+					text-align: center;
+
+		}
+		
+	}
+
+.content {
+	h1 {
+		padding-left: 7%;
+	}
+	th {
+		text-align: center;
+	}
+	.news{
+		margin :10px 0 10px  0;
+		#news_content{
+			
+			text-align: center;
+		}
+		#status{
+			text-align: center;
+			border-radius:4px;
+		}
+
+	}
+}
