@@ -3,14 +3,15 @@ html, body {
   height: 100%;
   background-color: #d9ccc0; }
 
-#header {
+header {
   background-color: #f0a986;
   height: 12%; }
-#header #telop {
+header #telop {
   margin-top: 1%;
   font-size: 20px;
-  float: left; }
-#header #logout {
+  float: left;
+  text-align: center; }
+header #logout {
   margin-top: 1%;
   font-size: 20px;
   float: right;
@@ -24,10 +25,21 @@ html, body {
   padding-left: 7%; }
 .content th {
   text-align: center; }
+.content table .select {
+  background-color: #e6b422; }
 .content .news {
-  margin: 10px 0 10px  0; }
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 2%; }
 .content .news #news_content {
   text-align: center; }
 .content .news #status {
   text-align: center;
   border-radius: 4px; }
+.content .more #check {
+  margin-top: 3%;
+  padding-top: 2%; }
+.content .more #more_detail {
+  margin-top: 5%; }
+.content .more #entry {
+  margin-top: 30%; }

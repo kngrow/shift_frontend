@@ -1,6 +1,7 @@
 $themecolor :#F0A986;
-$buttoncolor : #D9654D;
-$backcolor : #D9CCC0;
+$buttoncolor : #D9654D;//
+$backcolor : #D9CCC0;//イメージカラー
+$selectcolor : #e6b422;//金色
 
 @mixin line {
 	margin-top  : 1%;
@@ -12,28 +13,29 @@ html,body{
 	height: 100%;
 	background-color: $backcolor;
 }
-	#header{
-		background-color: $themecolor;
-		height : 12%;
-		
-			
-				#telop {
-					@include line; 
-					float : left;
-							
-				}
-				#logout {
-					@include line;
-					float : right;
-					height: 70%;
-					margin-right: 3%;
-					border-radius : 5px;
-					background-color :$buttoncolor ;
-					text-align: center;
 
-		}
-		
+
+header{
+	background-color: $themecolor;
+	height : 12%;
+
+	#telop {
+		@include line; 
+		float : left;
+		text-align: center;
+		// white-space: nowrap
 	}
+	#logout {
+		@include line;
+		float : right;
+		height: 70%;
+		margin-right: 3%;
+		border-radius : 5px;
+		background-color :$buttoncolor ;
+		text-align: center;
+	}
+		
+}
 
 .content {
 	h1 {
@@ -42,8 +44,15 @@ html,body{
 	th {
 		text-align: center;
 	}
+	table {
+		.select {
+			background-color: $selectcolor;
+		}
+	}
 	.news{
-		margin :10px 0 10px  0;
+		margin-top :2%;
+		margin-bottom : 2%;
+		padding-bottom:2%;
 		#news_content{
 			
 			text-align: center;
@@ -52,6 +61,22 @@ html,body{
 			text-align: center;
 			border-radius:4px;
 		}
-
 	}
+	.more{
+		#date{
+			// font-size: 50px;
+		}
+		#check{
+			margin-top:3%;
+			padding-top:2%;
+		}
+		#more_detail{
+			margin-top:5%;
+		}
+		#entry {
+			margin-top :30%;
+		}
+	}
+	
 }
+
