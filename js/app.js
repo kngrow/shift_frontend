@@ -6,7 +6,6 @@ $(function(){
   $("[name='shift_checkbox']").bootstrapSwitch();
   
 
-});
 
 
 
@@ -34,6 +33,14 @@ $("tbody th").on("click",function(){
         $($(".more").data("td")).removeClass("select");
       }
   }});
+  
+  $("#entry").on("click",function(){
+    if(window.confirm("登録しますか？")){
+        alert("登録しました");
+        location.href="../";
 
+    }
+  })
 
+});
 
