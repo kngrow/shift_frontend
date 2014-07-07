@@ -1,7 +1,7 @@
 $themecolor :#F0A986;
-$buttoncolor : #D9654D;
-$backcolor : #D9CCC0;
-$selectcolor : #e6b422;
+$buttoncolor : #D9654D;//
+$backcolor : #D9CCC0;//イメージカラー
+$selectcolor : #e6b422;//金色
 
 @mixin line {
 	margin-top  : 1%;
@@ -45,7 +45,7 @@ header{
 		text-align: center;
 	}
 	table {
-		#select {
+		.select {
 			background-color: $selectcolor;
 		}
 	}

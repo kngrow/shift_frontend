@@ -25,7 +25,7 @@ header #logout {
   padding-left: 7%; }
 .content th {
   text-align: center; }
-.content table #select {
+.content table .select {
   background-color: #e6b422; }
 .content .news {
   margin-top: 2%;
