@@ -25,6 +25,8 @@ header #logout {
   padding-left: 7%; }
 .content th {
   text-align: center; }
+.content table {
+  margin-top: 3em; }
 .content table .select {
   background-color: #e6b422; }
 .content .news {
@@ -43,3 +45,5 @@ header #logout {
   margin-top: 5%; }
 .content .more #entry {
   margin-top: 30%; }
+.content .more .incoming {
+  margin-top: 10em; }

@@ -4,12 +4,7 @@ $(function(){
   });
 
   $("[name='shift_checkbox']").bootstrapSwitch();
-  
-
-
-
-
-
+ 
 //シフト登録ページで色を金にする。
 $("tbody th").on("click",function(){
   $("#date").removeClass("hidden");
@@ -40,7 +35,9 @@ $("tbody th").on("click",function(){
         location.href="../";
 
     }
-  })
+  });
+
+  
 
 });
 
