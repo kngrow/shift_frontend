@@ -13,9 +13,10 @@ $("tbody th").on("click",function(){
   $("#check").removeClass("hidden");
   $("#date").html($(this).text());
   $(".more").data("td", this);  
+  $(".incoming").removeClass("hidden");
   
 });
-
+  //ON OFFのチェックボックス
   $('input[name="shift_checkbox"]').on({'switchChange.bootstrapSwitch': function(event, state) {
       if(state == true ){
         console.log("可");
@@ -28,13 +29,21 @@ $("tbody th").on("click",function(){
         $($(".more").data("td")).removeClass("select");
       }
   }});
-  
+  //シフトを登録するときのアラート文  
   $("#entry").on("click",function(){
     if(window.confirm("登録しますか？")){
         alert("登録しました");
         location.href="../";
 
     }
+  });
+
+  //シフト作成ページで☓で消す
+
+  $(".glyphicon-remove").on("click", function(){
+      $(".glyphicon-remove").on("click",function(){
+         $(this).parent().fadeOut()
+      });
   });
 
   
