@@ -45,6 +45,7 @@ header{
 		text-align: center;
 	}
 	table {
+		margin-top : 3em;
 		.select {
 			background-color: $selectcolor;
 		}
@@ -76,6 +77,11 @@ header{
 		#entry {
 			margin-top :30%;
 		}
+	}
+	.incoming{
+		margin-top:5%;
+		margin-bottom: 10%;
+
 	}
 	
 }
