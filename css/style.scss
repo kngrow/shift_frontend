@@ -7,6 +7,10 @@ $selectcolor : #e6b422;//金色
 	margin-top  : 1%;
 	font-size : 20px; 
 }
+@mixin margin {
+	margin-top: 2%;
+	margin-bottom :7%;
+}
 		
 html,body{
 	width : 100%;
@@ -41,15 +45,18 @@ header{
 	h1 {
 		padding-left: 7%;
 	}
+	
 	th {
 		text-align: center;
 	}
+	
 	table {
 		margin-top : 3em;
 		.select {
 			background-color: $selectcolor;
 		}
 	}
+
 	.news{
 		margin-top :2%;
 		margin-bottom : 2%;
@@ -63,6 +70,7 @@ header{
 			border-radius:4px;
 		}
 	}
+
 	.more{
 		#date{
 			// font-size: 50px;
@@ -78,11 +86,17 @@ header{
 			margin-top :30%;
 		}
 	}
+	
 	.incoming{
 		margin-top:5%;
 		margin-bottom: 10%;
-
 	}
 	
+	#subtitle {
+		@include margin;
+	}
+	#set {
+		@include margin;
+	}
 }
 
