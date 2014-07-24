@@ -10,19 +10,28 @@ header {
 }
 header #telop {
   margin-top: 1%;
-  font-size: 20px;
+  font-size: 1.3em;
   float: left;
   text-align: center;
 }
 header #logout {
   margin-top: 1%;
-  font-size: 20px;
+  font-size: 1.3em;
   float: right;
   height: 70%;
   margin-right: 3%;
   border-radius: 5px;
   background-color: #d9654d;
   text-align: center;
+}
+
+.form-horizontal {
+  margin: 5% 0 5% 6%;
+}
+
+.form-group .btn {
+  padding-top: 3%;
+  margin-top: 4%;
 }
 
 .content h1 {
