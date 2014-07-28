@@ -5,6 +5,7 @@
 	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0,initial-scale=1.0, user-scalable=no">
 	<title>シフト募集ページ</title>
 	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" type="text/css" href="../../css/template.css" />
 </head>
 <body>
@@ -22,17 +23,60 @@
 	 	</div>
 		
 		<h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">期間</h3>
-		<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-8 col-sm-8 col-md-8 col-lg-8">
-			<input type="date" /> 〜
+ 		<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-8 col-sm-8 col-md-8 col-lg-8">
+			<div class='col-xs-10 col-sm-3 col-md-3 col-lg-3 input-group date datetimepicker '>
+                    <input type='text' class="form-control" id="start"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            <div class='col-xs-10 col-sm-3 col-md-3 col-lg-3 input-group date datetimepicker '>
+                    <input type='text' class="form-control" id="end"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+        </div>
+<!--			<input type="date" /> 〜
 			<input type="date" />
-		</div>
+		</div> -->
 		<h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">シフト提出期限</h3>
 		<div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-8 col-sm-8 col-md-8 col-lg-8">
-			<input type="date" />
+		<div class='col-xs-10 col-sm-3 col-md-3 col-lg-3 input-group date datetimepicker '>
+                    <input type='text' class="form-control"  id="config"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+		</div>
 		</div>
 		<button class="col-xs-offset-7 col-sm-offset-7 col-md-offset-7 col-lg-offset-7 col-xs-3 col-sm-3 col-md-3 col-lg-3 btn btn-success" id="set">
 			登録
 		</button>
 	</div>
+	<script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/moment.js" ></script>
+	<script type="text/javascript" src="../../js/bootstrap-datetimepicker.min.js"></script>
+	
+	<script type="text/javascript">
+			$(function() {
+				  $(".back").on("click",function(ev){
+    location.href='./../';
+  });
+
+
+    $('.datetimepicker').datetimepicker({
+      language: 'en',
+      pick12HourFormat: true
+    });
+
+
+    $("#set").on("click",function(){
+    	if(window.confirm($("#start").val() + "から" +  $("#end").val() +"の期間 \n 期限を" + $("#config").val() + "で設定します。よろしいですか？")){
+    		location.href="../";
+    	}
+    });
+      		$("#logout").on("click",function(){
+  			location.href="../"
+  		});
+  });
+	</script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
 	<header id="header">
 		<div class="col-sx-7 col-sm-7 col-md-7 col-lg-7" id="telop">
-			Welcome! ○○さん！
+			Welcome! きょこたんさん！
 		</div>
 		<button class="col-xs-4 col-sm-4 col-md-4 col-lg-4 btn" id="logout">
 			ログアウト
@@ -69,7 +69,9 @@
 		$('.btn-warning').on("click",function(){
     		location.href="./shiftenter";
   		});
-
+  		$("#logout").on("click",function(){
+  			location.href="../login.html";
+  		});
 	});
 	</script>
 </body>
