@@ -1,10 +1,7 @@
 $(function(){
-  $(".back").on("click",function(ev){
-    location.href='./../';
-  });
 
   $("[name='shift_checkbox']").bootstrapSwitch();
- 
+
 //シフト登録ページで色を金にする。
 $("tbody th").on("click",function(){
   $("#date").removeClass("hidden");
@@ -12,9 +9,9 @@ $("tbody th").on("click",function(){
   $("#entry").removeClass("hidden");
   $("#check").removeClass("hidden");
   $("#date").html($(this).text());
-  $(".more").data("td", this);  
+  $(".more").data("td", this);
   $(".incoming").removeClass("hidden");
-  
+
 });
   //ON OFFのチェックボックス
   $('input[name="shift_checkbox"]').on({'switchChange.bootstrapSwitch': function(event, state) {
@@ -29,7 +26,7 @@ $("tbody th").on("click",function(){
         $($(".more").data("td")).removeClass("select");
       }
   }});
-  //シフトを登録するときのアラート文  
+  //シフトを登録するときのアラート文
   $("#entry").on("click",function(){
     if(window.confirm("登録しますか？")){
         alert("登録しました");
@@ -42,11 +39,8 @@ $("tbody th").on("click",function(){
 
   $(".glyphicon-remove").on("click", function(){
       $(".glyphicon-remove").on("click",function(){
-         $(this).parent().fadeOut()
+         $(this).parent().fadeOut();
       });
   });
 
-  
-
 });
-

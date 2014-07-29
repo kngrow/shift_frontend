@@ -3,15 +3,17 @@ $buttoncolor : #D9654D;//
 $backcolor : #D9CCC0;//イメージカラー
 $selectcolor : #e6b422;//金色
 
+@import "media_queries";
+
 @mixin line {
 	margin-top  : 1%;
-	font-size : 1.3em; 
+	font-size : 1.3em;
 }
 @mixin margin {
 	margin-top: 2%;
 	margin-bottom :7%;
 }
-		
+
 html,body{
 	width : 100%;
 	height: 100%;
@@ -23,7 +25,7 @@ header{
 	height : 12%;
 
 	#telop {
-		@include line; 
+		@include line;
 		float : left;
 		text-align: center;
 		// white-space: nowrap
@@ -37,7 +39,7 @@ header{
 		background-color :$buttoncolor ;
 		text-align: center;
 	}
-		
+
 }
 .form-horizontal {
 	margin:5% 0 5% 6%;
@@ -55,11 +57,11 @@ header{
 	h1 {
 		padding-left: 7%;
 	}
-	
+
 	th {
 		text-align: center;
 	}
-	
+
 	table {
 		margin-top : 3em;
 		.select {
@@ -72,7 +74,7 @@ header{
 		margin-bottom : 2%;
 		padding-bottom:2%;
 		#news_content{
-			
+
 			text-align: center;
 		}
 		#status{
@@ -96,12 +98,12 @@ header{
 			margin-top :30%;
 		}
 	}
-	
+
 	.incoming{
 		margin-top:5%;
 		margin-bottom: 10%;
 	}
-	
+
 	#subtitle {
 		@include margin;
 	}
@@ -109,4 +111,3 @@ header{
 		@include margin;
 	}
 }
-
