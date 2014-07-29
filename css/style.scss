@@ -3,8 +3,9 @@ $buttoncolor : #D9654D;//
 $backcolor : #D9CCC0;//イメージカラー
 $selectcolor : #e6b422;//金色
 
-@import "media_queries";
+@import "media-queries";
 
+//多分そのうち要らなくなる。
 @mixin line {
 	margin-top  : 1%;
 	font-size : 1.3em;
@@ -14,22 +15,27 @@ $selectcolor : #e6b422;//金色
 	margin-bottom :7%;
 }
 
+
+//初期設定。
 html,body{
 	width : 100%;
 	height: 100%;
 	background-color: $backcolor;
 }
 
+//ヘッダー
 header{
 	background-color: $themecolor;
 	height : 12%;
 
+//ヘッダー内の一言コメント的なやつ
 	#telop {
 		@include line;
 		float : left;
 		text-align: center;
 		// white-space: nowrap
 	}
+	//ログアウトボタンだったり戻るボタンだったりするやつ。
 	#logout {
 		@include line;
 		float : right;
@@ -41,10 +47,13 @@ header{
 	}
 
 }
+
+//　ログインフォームを囲む奴
 .form-horizontal {
 	margin:5% 0 5% 6%;
 
 }
+// フォームの一つを設定
 .form-group {
 	.btn {
 		padding-top:3%;
@@ -52,12 +61,12 @@ header{
 	}
 }
 
-
+// コンテンツ
 .content {
 	h1 {
 		padding-left: 7%;
 	}
-
+// カレンダーを表示するtable
 	th {
 		text-align: center;
 	}
@@ -69,6 +78,8 @@ header{
 		}
 	}
 
+
+//ニュース
 	.news{
 		margin-top :2%;
 		margin-bottom : 2%;
