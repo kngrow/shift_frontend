@@ -28,7 +28,7 @@ header{
 	background-color: $themecolor;
 	height : 12%;
 
-//ヘッダー内の一言コメント的なやつ
+	//ヘッダー内の一言コメント的なやつ
 	#telop {
 		@include line;
 		float : left;
@@ -66,7 +66,7 @@ header{
 	h1 {
 		padding-left: 7%;
 	}
-// カレンダーを表示するtable
+	// カレンダーを表示するtable
 	th {
 		text-align: center;
 	}
@@ -79,21 +79,20 @@ header{
 	}
 
 
-//ニュース
+	//ニュース
 	.news{
 		margin-top :2%;
 		margin-bottom : 2%;
 		padding-bottom:2%;
-		#news_content{
-
-			text-align: center;
-		}
+		// ニュースのコンテンツを表示
 		#status{
 			text-align: center;
 			border-radius:4px;
 		}
 	}
 
+
+//
 	.more{
 		#date{
 			// font-size: 50px;

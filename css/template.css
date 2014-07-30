@@ -51,9 +51,6 @@ header #logout {
   margin-bottom: 2%;
   padding-bottom: 2%;
 }
-.content .news #news_content {
-  text-align: center;
-}
 .content .news #status {
   text-align: center;
   border-radius: 4px;
