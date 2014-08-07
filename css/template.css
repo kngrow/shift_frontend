@@ -19,7 +19,7 @@ header {
 }
 @media screen and (min-width: 600px) {
   header {
-    height: 7%;
+    height: 12%;
   }
 }
 @media screen and (min-width: 800px) {
@@ -30,7 +30,6 @@ header {
 header #telop {
   margin-top: 1%;
   font-size: 1.3em;
-  float: left;
   text-align: center;
 }
 @media screen and (min-width: 320px) {
@@ -44,14 +43,42 @@ header #telop {
   }
 }
 header #logout {
-  margin-top: 1%;
   font-size: 1.3em;
-  float: right;
   height: 70%;
   margin-right: 3%;
   border-radius: 5px;
   background-color: #d9654d;
   text-align: center;
+}
+@media screen and (min-width: 320px) {
+  header #logout {
+    margin-top: 3%;
+  }
+}
+@media screen and (min-width: 480px) {
+  header #logout {
+    margin-top: 1%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: randscape) {
+  header #logout {
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 600px) {
+  header #logout {
+    margin-top: 1%;
+  }
+}
+@media screen and (min-width: 600px) {
+  header #logout {
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header #logout {
+    margin-top: 1%;
+  }
 }
 
 .form-horizontal {
@@ -75,10 +102,12 @@ header #logout {
 .content table .select {
   background-color: #e6b422;
 }
-.content .news {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding-bottom: 2%;
+@media screen and (min-width: 320px) {
+  .content .news {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    padding-bottom: 10%;
+  }
 }
 .content .news #status {
   text-align: center;

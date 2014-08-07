@@ -7,8 +7,7 @@ $selectcolor : #e6b422;//金色
 
 //多分そのうち要らなくなる。
 @mixin line {
-	margin-top  : 1%;
-	font-size : 1.3em;
+	margin-top : 1%;
 }
 @mixin margin {
 	margin-top: 2%;
@@ -31,7 +30,7 @@ header{
 		height: 17%;
 	}
 	@include min-screen(600px){
-		height : 7%;
+		height : 12%;
 	}
 	@include min-screen(800px){
 		height : 12%;
@@ -39,7 +38,7 @@ header{
 	//ヘッダー内の一言コメント的なやつ
 	#telop {
 		@include line;
-		float : left;
+		font-size : 1.3em;
 		text-align: center;
 
 		@include min-screen(320px){
@@ -52,13 +51,31 @@ header{
 	}
 	//ログアウトボタンだったり戻るボタンだったりするやつ。
 	#logout {
-		@include line;
-		float : right;
+		font-size : 1.3em;
 		height: 70%;
 		margin-right: 3%;
 		border-radius : 5px;
 		background-color :$buttoncolor ;
 		text-align: center;
+
+		@include min-screen(320px){
+			margin-top : 3%;
+		}
+		@include min-screen(480px){
+			margin-top: 1%;
+		}
+		@include iphone5(randscape){
+			margin-top : 2%;
+		}
+		@include min-screen(600px){
+			margin-top :1%;
+		}
+		@include min-screen(600px){
+			margin-top :2%;
+		}
+		@include min-screen(1024px){
+			margin-top : 1%;
+		}
 	}
 
 }
@@ -96,9 +113,12 @@ header{
 
 	//ニュース
 	.news{
-		margin-top :2%;
+
+		@include min-screen(320px){
+		margin-top :10%;
 		margin-bottom : 2%;
-		padding-bottom:2%;
+		padding-bottom:10%;
+		}
 		// ニュースのコンテンツを表示
 		#status{
 			text-align: center;
