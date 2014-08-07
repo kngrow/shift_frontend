@@ -14,8 +14,6 @@ $selectcolor : #e6b422;//金色
 	margin-top: 2%;
 	margin-bottom :7%;
 }
-
-
 //初期設定。
 html,body{
 	width : 100%;
@@ -26,13 +24,30 @@ html,body{
 //ヘッダー
 header{
 	background-color: $themecolor;
+	@include min-screen(320px){
 	height : 12%;
-
+	}
+	@include min-screen(480px){
+		height: 17%;
+	}
+	@include min-screen(600px){
+		height : 7%;
+	}
+	@include min-screen(800px){
+		height : 12%;
+	}
 	//ヘッダー内の一言コメント的なやつ
 	#telop {
 		@include line;
 		float : left;
 		text-align: center;
+
+		@include min-screen(320px){
+		padding-top : 1em;
+	}
+		@include min-screen(480px){
+			padding-top: 0.5em;
+		}
 		// white-space: nowrap
 	}
 	//ログアウトボタンだったり戻るボタンだったりするやつ。
