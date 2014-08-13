@@ -79,7 +79,7 @@ header{
 	}
 
 }
-
+// ログイン関係
 //　ログインフォームを囲む奴
 .form-horizontal {
 	margin:5% 0 5% 6%;
@@ -87,9 +87,14 @@ header{
 }
 // フォームの一つを設定
 .form-group {
+
 	.btn {
-		padding-top:3%;
-		margin-top :4%;
+		@include min-screen(320px){
+			 margin : 10% 20% 0 20%;
+		}
+		@include min-screen(480px){
+				margin : 0 5% 0 0;
+		}
 	}
 }
 
