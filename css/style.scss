@@ -88,14 +88,24 @@ header{
 // フォームの一つを設定
 .form-group {
 
-	.btn {
+	.log {
 		@include min-screen(320px){
-			 margin : 10% 20% 0 20%;
+			margin-bottom: 10%;
 		}
 		@include min-screen(480px){
-				margin : 0 5% 0 0;
+			margin-bottom:2%;
+		}
+		@include min-screen(600px){
+			margin-bottom: 5%;
+		}
+		@include min-screen(768px){
+			margin-bottom:5%;
+		}
+		@include min-screen(1024px){
+			margin-left:7%;
 		}
 	}
+
 }
 
 // コンテンツ
