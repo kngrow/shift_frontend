@@ -34,7 +34,7 @@ header #telop {
 }
 @media screen and (min-width: 320px) {
   header #telop {
-    padding-top: 1em;
+    padding: 1em 0 0 0;
   }
 }
 @media screen and (min-width: 480px) {
@@ -130,9 +130,9 @@ header #logout {
     padding-bottom: 10%;
   }
 }
-.content .news #status {
-  text-align: center;
-  border-radius: 4px;
+.content .news .status {
+  margin-bottom: 10%;
+  margin: 5%;
 }
 .content .more #check {
   margin-top: 3%;
