@@ -1,8 +1,28 @@
-$themecolor :#F0A986;
-$buttoncolor : #D9654D;//
-$backcolor : #D9CCC0;//イメージカラー
-$selectcolor : #e6b422;//金色
-
-@import ""
+$theme :#8F776A;//イメージカラー
+$button: #66AEF3;//こーひーっぽいイロ
+$back : #F4E9DF;//
+$lava : #3F3E57;
+$blueright :#66AEF3;
 @import "compass";
-@import "compass/reset";
+@import "media-queries";
+
+
+@include font-face("foundation-icons",fontfiles("font/foundation-icons.ttf","font/foundation-icons.woff","font/foundation-icons.eot","font/foundation-icons.svg"));
+
+html,body {
+  width :100%;
+  height : 100%;
+  background-color: $back ;
+
+}
+
+header {
+  background-color:$theme ;
+  width : 100%;
+  //ページ名を表示するやつ
+  #telop {
+    color : #FFF;
+  padding : 3px;
+  }
+
+}
