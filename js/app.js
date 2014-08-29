@@ -6,6 +6,7 @@ $(function(){
       if($(this).attr("value")){
           $("#shift_in").text($("#month").text() + $(this).text() + '時'  );
         } else {
+          $("#shift_in").text("今日はなし");
         }
   });
 });
