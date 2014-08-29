@@ -20,8 +20,12 @@ table tr td {
 }
 
 /* line 27, ../sass/style.scss */
+.news {
+  padding-bottom: 4%;
+}
+
+/* line 32, ../sass/style.scss */
 .news_content {
-  background-color: #66AEF3;
   font-size: 13px;
-  margin-top: 3%;
+  margin-top: 9px;
 }

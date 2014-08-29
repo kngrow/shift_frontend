@@ -19,13 +19,17 @@ html,body {
 .h1_padding{
   padding-top : 20px;
 }
-
+//日付のあれ
 table tr td {
   padding : 4% 0 ;
 }
+//連絡事項の１単位
+.news {
+  padding-bottom: 4%;
+}
 
+//連絡事項内容
 .news_content {
-  background-color : $blueright;
   font-size : 13px;
-  margin-top: 3%;
+  margin-top: 9px;
 }
