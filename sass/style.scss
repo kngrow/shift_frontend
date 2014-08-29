@@ -16,13 +16,10 @@ html,body {
 
 }
 
-header {
-  background-color:$theme ;
-  width : 100%;
-  //ページ名を表示するやつ
-  #telop {
-    color : #FFF;
-  padding : 3px;
-  }
+.h1_padding{
+  padding-top : 20px;
+}
 
+table tr td {
+  padding : 4% 0 ;
 }
