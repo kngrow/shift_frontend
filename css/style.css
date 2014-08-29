@@ -22,5 +22,6 @@ table tr td {
 /* line 27, ../sass/style.scss */
 .news_content {
   background-color: #66AEF3;
-  word-wrap: nowrap;
+  font-size: 13px;
+  margin-top: 3%;
 }
