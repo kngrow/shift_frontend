@@ -6,16 +6,15 @@
 html, body {
   width: 100%;
   height: 100%;
-  background-color: #F4E9DF;
+  background-color: #f4e9df;
 }
 
 /* line 19, ../sass/style.scss */
-header {
-  background-color: #8F776A;
-  width: 100%;
+.h1_padding {
+  padding-top: 20px;
 }
+
 /* line 23, ../sass/style.scss */
-header #telop {
-  color: #FFF;
-  padding: 3px;
+table tr td {
+  padding: 4% 0;
 }
