@@ -6,7 +6,6 @@ $(function(){
       if($(this).attr("value")){
           $("#shift_in").text($("#month").text() + $(this).text() + 'ああ'  );
         } else {
-
         }
   });
 });
