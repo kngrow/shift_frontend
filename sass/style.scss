@@ -33,9 +33,16 @@ table tr td {
   font-size : 13px;
   margin-top: 9px;
 }
+//曜日の文字色
+#saturday{
+  color : #00F;
+}
+#sunday{
+  color : #F00;
+}
+
 //シフトで入ってる日のアレ
 #shift_in_allow{
-
     width: 0;
     height: 0;
     border-bottom: 10px solid #333;
@@ -48,4 +55,5 @@ table tr td {
   background-color : #333333;
   color : #FFFFFF;
   width: 100%;
+  display: none;
 }

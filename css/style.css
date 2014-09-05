@@ -32,6 +32,16 @@ table tr td {
 }
 
 /* line 37, ../sass/style.scss */
+#saturday {
+  color: #00F;
+}
+
+/* line 40, ../sass/style.scss */
+#sunday {
+  color: #F00;
+}
+
+/* line 45, ../sass/style.scss */
 #shift_in_allow {
   width: 0;
   height: 0;
@@ -42,9 +52,10 @@ table tr td {
   top: -10px;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 #shift_in {
   background-color: #333333;
   color: #FFFFFF;
   width: 100%;
+  display: none;
 }
