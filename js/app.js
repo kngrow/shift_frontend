@@ -25,4 +25,6 @@ $(function(){
           $("#shift_in").hide().fadeIn("slow");
         }
   });
+
+  
 });
