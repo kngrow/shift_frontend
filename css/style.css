@@ -9,40 +9,38 @@ html, body {
   height: 100%;
   background-color: #f4e9df;
 }
-
-/* line 19, ../sass/style.scss */
-.h1_padding {
+/* line 16, ../sass/style.scss */
+html .center, body .center {
+  padding: 25px 0;
+  text-align: center;
+}
+/* line 20, ../sass/style.scss */
+html .h1_padding, body .h1_padding {
   padding-top: 20px;
 }
-
-/* line 23, ../sass/style.scss */
-table tr td {
+/* line 24, ../sass/style.scss */
+html table tr td, body table tr td {
   padding: 4% 0;
 }
-
-/* line 27, ../sass/style.scss */
-.news {
+/* line 28, ../sass/style.scss */
+html .news, body .news {
   padding-bottom: 4%;
 }
-
-/* line 32, ../sass/style.scss */
-.news_content {
+/* line 33, ../sass/style.scss */
+html .news_content, body .news_content {
   font-size: 13px;
   margin-top: 9px;
 }
-
-/* line 37, ../sass/style.scss */
-#saturday {
+/* line 38, ../sass/style.scss */
+html #saturday, body #saturday {
   color: #003f8e;
 }
-
-/* line 40, ../sass/style.scss */
-#sunday {
+/* line 41, ../sass/style.scss */
+html #sunday, body #sunday {
   color: #C00;
 }
-
-/* line 45, ../sass/style.scss */
-#shift_in_allow {
+/* line 46, ../sass/style.scss */
+html #shift_in_allow, body #shift_in_allow {
   width: 0;
   height: 0;
   border-bottom: 10px solid #333;
@@ -51,9 +49,8 @@ table tr td {
   position: relative;
   top: -10px;
 }
-
-/* line 54, ../sass/style.scss */
-#shift_in {
+/* line 55, ../sass/style.scss */
+html #shift_in, body #shift_in {
   background-color: #333333;
   color: #FFFFFF;
   width: 100%;
