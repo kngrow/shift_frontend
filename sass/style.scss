@@ -34,7 +34,18 @@ table tr td {
   margin-top: 9px;
 }
 //シフトで入ってる日のアレ
+#shift_in:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #333;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+
+}
 #shift_in {
   background-color : #333333;
   color : #FFFFFF;
+
 }
