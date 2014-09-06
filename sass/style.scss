@@ -41,6 +41,13 @@ html,body {
       #sunday{
         color : #C00;
       }
+      //リンクの色を変えるアレ
+      a:link { color: #000; }
+      a:visited { color: #000; }
+      a:hover { color: #000; }
+      a:active { color: #000; }
+
+
 
       //シフトで入ってる日のアレ
       #shift_in_allow{

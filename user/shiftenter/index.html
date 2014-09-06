@@ -2,13 +2,15 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8" />
-	<title>TOP</title>
+	<title>シフト入力ページ</title>
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" href="../../css/foundation.min.css" />
 	<link rel="stylesheet" href="../../css/style.css" />
 	<link rel="stylesheet" href="../../css/foundation-icons.css" />
+	<link rel="stylesheet" href="../../css/jquery.remodal.css" />
 </head>
 <body>
+	<div class="remodal-bg">
 	<div class="off-canvas-wrap" data-offcanvas>
 		<div class="inner-wrap">
 			<header>
@@ -47,41 +49,55 @@
 				</thead>
 				<tbody>
 					<tr>
-					<td>12</td>
-					<td>13</td>
-					<td>14</td>
-					<td>15</td>
-					<td>16</td>
-					<td>17</td>
-					<td>18</td>
+					<td><a href="#modal">12</a></td>
+					<td><a href="#modal">13</a></td>
+					<td><a href="#modal">14</a></td>
+					<td><a href="#modal">15</a></td>
+					<td><a href="#modal">16</a></td>
+					<td><a href="#modal">17</a></td>
+					<td><a href="#modal">18</a></td>
 				</tr>
 				<tr>
-				<td>19</td>
-				<td>20</td>
-				<td>21</td>
-				<td>22</td>
-				<td>23</td>
-				<td>24</td>
-				<td>25</td>
+				<td><a href="#modal">19</a></td>
+				<td><a href="#modal">20</a></td>
+				<td><a href="#modal">21</a></td>
+				<td><a href="#modal">22</a></td>
+				<td><a href="#modal">23</a></td>
+				<td><a href="#modal">24</a></td>
+				<td><a href="#modal">25</a></td>
 			</tr>
 			<tr>
-			<td>26</td>
-			<td>27</td>
-			<td>28</td>
-			<td>29</td>
-			<td>30</td>
-			<td>31</td>
+			<td><a href="#modal">26</a></td>
+			<td><a href="#modal">27</a></td>
+			<td><a href="#modal">28</a></td>
+			<td><a href="#modal">29</a></td>
+			<td><a href="#modal">30</a></td>
+			<td><a href="#modal">31</a></td>
 			<td></td>
 		</tr>
 			</tbody>
 		</table>
+
+		<div class="remodal" data-remodal-id="modal">
+    <h1>Remodal</h1>
+    <p>
+      Flat, responsive, lightweight, fast, easy customizable modal window plugin
+      with declarative state notation and hash tracking.
+    </p>
+    <br>
+    <a class="remodal-cancel" href="#">Cancel</a>
+    <a class="remodal-confirm" href="#">OK</a>
+</div>
+
 <h1 class="top_padding">入力したシフト</h1>
 			</div>
 	</div>
+</div>
 <script src="../../js/jquery-2.1.1.min.js"></script>
 <script src="../../js/foundation.min.js"></script>
 <script src="../../js/foundation.offcanvas.js"></script>
 <script src="../../js/jquery.transit.min.js"></script>
-<script type="text/javascript"src="../../js/entry.js"></script>
+<script src="../../js/jquery.remodal.js"></script>
+<script src="../../js/entry.js"></script>
 </body>
 </html>
