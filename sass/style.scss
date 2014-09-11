@@ -41,11 +41,14 @@ html,body {
       #sunday{
         color : #C00;
       }
+      @mixin black {
+        color : #000;
+      }
       //リンクの色を変えるアレ
-      a:link { color: #000; }
-      a:visited { color: #000; }
-      a:hover { color: #000; }
-      a:active { color: #000; }
+      a:link { @include black }
+      a:visited { @include black }
+      a:hover { @include black }
+      a:active { @include black }
 
 
 
