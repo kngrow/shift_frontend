@@ -72,3 +72,7 @@ html #shift_in, body #shift_in {
   width: 100%;
   display: none;
 }
+/* line 73, ../sass/style.scss */
+html .remodal #select_start, body .remodal #select_start {
+  margin-top: 90px;
+}
