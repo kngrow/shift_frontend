@@ -7,8 +7,6 @@ $blueright :#66AEF3;
 @import "media-queries";
 
 
-@include font-face("foundation-icons",fontfiles("font/foundation-icons.ttf","font/foundation-icons.woff","font/foundation-icons.eot","font/foundation-icons.svg"));
-
 html,body {
   width :100%;
   height : 100%;
@@ -75,6 +73,11 @@ html,body {
         }
         .btns {
 
+        }
+      }
+      #shift_selected {
+        .selected_time {
+          margin-top : 2%;
         }
       }
         #enter_submit {

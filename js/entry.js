@@ -10,11 +10,17 @@ $(function(){
         remodal.open();
       }
   });
+
+
   $(document).on('confirm', '.remodal', function () {
       select_start = $("#select_start").val();
       select_end  = $("#select_end").val();
-      console.log(select_start);
-      $("#shift_selected").append( "<div class='selected_time'>" +select_day  +"　"+  select_start+ "~" + select_end  +"</div>" );
 
+        if(select_start  && select_end){
+            $("#shift_selected").append( "<div class='selected_time'>" +select_day  +"　"+  select_start+ "~" + select_end  + "　　<i class='step fi-x '></i>" + "</div>" );
+        } else {
+          remodal.close();
+           alert("時間が入力されてません。");
+        }
 });
 });
