@@ -15,7 +15,7 @@ $(function(){
 
       if($(this).attr("value")){
         $("#shift_in_allow").css("left", trianglecenter);
-        $("#shift_in").html(' <div id="shift_in_allow"></div>' +$("#month").text() + $(this).text() + '時'  );
+        $("#shift_in").html(' <div id="shift_in_allow"></div>' +$("#month").text() + $(this).text() + '日'+ '時'  );
         $("#shift_in_allow").css("left", trianglecenter);
         $("#shift_in").hide().fadeIn("slow");
         } else {
@@ -26,5 +26,5 @@ $(function(){
         }
   });
 
-  
+
 });
