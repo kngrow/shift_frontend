@@ -1,5 +1,10 @@
 $(function(){
   $(document).foundation();
+  function RemoveQuestion () {
+
+  }
+
+
 
   $('table tr td').bind("touchend",function(ev){
       // alert($("#month").text() + $(this).text() + "時");
@@ -25,6 +30,8 @@ $(function(){
           $("#shift_in").hide().fadeIn("slow");
         }
   });
+
+
 
 
 
@@ -54,6 +61,7 @@ $(function(){
       });
 
 
-
-
+  $("#shift_selected").on('click touchend', '.selected_time' , function(ev){
+      alert("ああああああｗｗｗｗｗｗｗｗｗｗｗ");
+  });
 });
