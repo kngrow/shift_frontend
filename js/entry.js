@@ -12,8 +12,9 @@ $(function(){
   });
   $(document).on('confirm', '.remodal', function () {
       select_start = $("#select_start").val();
+      select_end  = $("#select_end").val();
       console.log(select_start);
-      $("#shift_selected").append( "<div>" +select_day + select_start +"</div>" );
+      $("#shift_selected").append( "<div class='selected_time'>" +select_day  +"　"+  select_start+ "~" + select_end  +"</div>" );
 
 });
 });
