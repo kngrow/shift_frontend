@@ -85,15 +85,17 @@
 					<h1 id="modal_month"></h1>
     <p>
 				<form>
-					<input type="text" id="select_start" placeholder="">
-					<input type="text" id="select_end" placeholder="">
+					<input type="time" id="select_start" placeholder="">
+					<input type="time" id="select_end" placeholder="">
 				</form>
 
     </p>
-
-    <a class="remodal-cancel" href="#">Cancel</a>
-    <a class="remodal-confirm" href="#">OK</a>
+		<div class="btns">
+    	<a class="remodal-cancel" href="#">Cancel</a>
+    	<a class="remodal-confirm" href="#">OK</a>
+		</div>
 </div>
+
 
 <h1 class="top_padding">入力したシフト</h1>
 				<div id="shift_selected">
@@ -102,6 +104,7 @@
 			</div>
 	</div>
 </div>
+<script src="../../js/underscore.js"></script>
 <script src="../../js/jquery-2.1.1.min.js"></script>
 <script src="../../js/foundation.min.js"></script>
 <script src="../../js/foundation.offcanvas.js"></script>

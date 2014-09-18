@@ -71,10 +71,13 @@ html,body {
       //modalのcss
       .remodal {
         #select_start {
-          margin-top : 90px;
+          margin : 70px 0;
         }
-        #submit {
-          margin-top : 5%;
+        .btns {
+
         }
       }
+        #enter_submit {
+          margin-top : 5%;
+        }
 }

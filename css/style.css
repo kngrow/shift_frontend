@@ -74,9 +74,9 @@ html #shift_in, body #shift_in {
 }
 /* line 73, ../sass/style.scss */
 html .remodal #select_start, body .remodal #select_start {
-  margin-top: 90px;
+  margin: 70px 0;
 }
-/* line 76, ../sass/style.scss */
-html .remodal #submit, body .remodal #submit {
+/* line 80, ../sass/style.scss */
+html #enter_submit, body #enter_submit {
   margin-top: 5%;
 }
