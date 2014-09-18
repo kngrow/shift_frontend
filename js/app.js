@@ -1,9 +1,7 @@
 $(function(){
   $(document).foundation();
-  function RemoveQuestion () {
 
-  }
-
+  var date = new Date();
 
 
   $('table tr td').bind("touchend",function(ev){
@@ -53,15 +51,19 @@ $(function(){
       select_end  = $("#select_end").val();
 
         if(select_start  && select_end){
+
             $("#shift_selected").append( "<div class='selected_time'>" +select_day  +"　"+  select_start+ "~" + select_end  + "　　<i class='step fi-x  '></i>" + "</div>" );
         } else {
-          remodal.close();
            alert("時間が入力されてません。");
         }
       });
 
 
-  $("#shift_selected").on('click touchend', '.selected_time' , function(ev){
-      alert("ああああああｗｗｗｗｗｗｗｗｗｗｗ");
+  $("#shift_selected").on('click touchend', '.step' , function(ev){
+      // alert("ああああああｗｗｗｗｗｗｗｗｗｗｗ");
+      if(window.confirm("消していいんですか？")){
+          alert("消しました。");
+          $(this).parent().fadeOut();
+      }
   });
 });
