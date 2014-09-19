@@ -68,5 +68,9 @@ $(function(){
   });
 
 
-  $("#shift_submit").on('')
+  $("#shift_submit").on('click touchend' ,function(ev){
+    if(window.confirm("これで提出してもいいんですか？")){
+            alert("提出しました。");
+    }
+  });
 });
