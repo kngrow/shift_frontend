@@ -1,6 +1,9 @@
 $(function(){
   $(document).foundation();
 
+  var date = new Date();
+
+
   $('table tr td').bind("touchend",function(ev){
       // alert($("#month").text() + $(this).text() + "時");
 
@@ -15,7 +18,7 @@ $(function(){
 
       if($(this).attr("value")){
         $("#shift_in_allow").css("left", trianglecenter);
-        $("#shift_in").html(' <div id="shift_in_allow"></div>' +$("#month").text() + $(this).text() + '時'  );
+        $("#shift_in").html(' <div id="shift_in_allow"></div>' +$("#month").text() + $(this).text() + '日'+ '時'  );
         $("#shift_in_allow").css("left", trianglecenter);
         $("#shift_in").hide().fadeIn("slow");
         } else {
@@ -24,5 +27,51 @@ $(function(){
           $("#shift_in_allow").css("left", trianglecenter);
           $("#shift_in").hide().fadeIn("slow");
         }
+  });
+
+
+
+
+
+  var remodal = $("[data-remodal-id=modal]").remodal({hashTracking: false});
+  var select_day, select_start , select_end;
+
+//touch時に日付を取得。
+  $("table tr td").on("click touchend", function(ev){
+      if( $(this).text()  ){
+       select_day = $("#month").text() + $(this).text() + "日";
+        $("#modal_month").html( select_day);
+        remodal.open();
+      }
+  });
+
+
+  $(document).on('confirm', '.remodal', function () {
+      select_start = $("#select_start").val();
+      select_end  = $("#select_end").val();
+
+        if(select_start  && select_end){
+
+            $("#shift_selected").append( "<div class='selected_time'>" +select_day  +"　"+  select_start+ "~" + select_end  + "　　<i class='step fi-x  '></i>" + "</div>" );
+        } else {
+           alert("時間が入力されてません。");
+        }
+      });
+
+
+  $("#shift_selected").on('click touchend', '.step' , function(ev){
+      // alert("ああああああｗｗｗｗｗｗｗｗｗｗｗ");
+      if(window.confirm("消していいんですか？")){
+          alert("消しました。");
+          $(this).parent().fadeOut();
+      }
+  });
+
+
+  $("#enter_submit").on('click touchend' ,function(ev){
+    if(window.confirm("これで提出してもいいんですか？")){
+            alert("提出しました。");
+            location.href="./../";
+    }
   });
 });

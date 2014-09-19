@@ -1,45 +1,56 @@
-@font-face {
-  font-family: "foundation-icons";
-  src: fontfiles("font/foundation-icons.ttf", "font/foundation-icons.woff", "font/foundation-icons.eot", "font/foundation-icons.svg");
-}
-
-/* line 12, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 html, body {
   width: 100%;
   height: 100%;
   background-color: #f4e9df;
 }
-/* line 16, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 html .center, body .center {
   padding: 25px 0;
   text-align: center;
 }
-/* line 20, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 html .h1_padding, body .h1_padding {
   padding-top: 20px;
 }
-/* line 24, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 html table tr td, body table tr td {
   padding: 4% 0;
 }
-/* line 28, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 html .news, body .news {
   padding-bottom: 4%;
 }
-/* line 33, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 html .news_content, body .news_content {
   font-size: 13px;
   margin-top: 9px;
 }
-/* line 38, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 html #saturday, body #saturday {
   color: #003f8e;
 }
-/* line 41, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 html #sunday, body #sunday {
   color: #C00;
 }
 /* line 46, ../sass/style.scss */
+html a:link, body a:link {
+  color: #000;
+}
+/* line 47, ../sass/style.scss */
+html a:visited, body a:visited {
+  color: #000;
+}
+/* line 48, ../sass/style.scss */
+html a:hover, body a:hover {
+  color: #000;
+}
+/* line 49, ../sass/style.scss */
+html a:active, body a:active {
+  color: #000;
+}
+/* line 54, ../sass/style.scss */
 html #shift_in_allow, body #shift_in_allow {
   width: 0;
   height: 0;
@@ -49,10 +60,22 @@ html #shift_in_allow, body #shift_in_allow {
   position: relative;
   top: -10px;
 }
-/* line 55, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 html #shift_in, body #shift_in {
   background-color: #333333;
   color: #FFFFFF;
   width: 100%;
   display: none;
+}
+/* line 71, ../sass/style.scss */
+html .remodal #select_start, body .remodal #select_start {
+  margin: 70px 0;
+}
+/* line 79, ../sass/style.scss */
+html #shift_selected .selected_time, body #shift_selected .selected_time {
+  margin-top: 2%;
+}
+/* line 83, ../sass/style.scss */
+html #enter_submit, body #enter_submit {
+  margin-top: 5%;
 }

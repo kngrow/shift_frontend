@@ -7,8 +7,6 @@ $blueright :#66AEF3;
 @import "media-queries";
 
 
-@include font-face("foundation-icons",fontfiles("font/foundation-icons.ttf","font/foundation-icons.woff","font/foundation-icons.eot","font/foundation-icons.svg"));
-
 html,body {
   width :100%;
   height : 100%;
@@ -41,6 +39,16 @@ html,body {
       #sunday{
         color : #C00;
       }
+      @mixin black {
+        color : #000;
+      }
+      //リンクの色を変えるアレ
+      a:link { @include black }
+      a:visited { @include black }
+      a:hover { @include black }
+      a:active { @include black }
+
+
 
       //シフトで入ってる日のアレ
       #shift_in_allow{
@@ -58,4 +66,21 @@ html,body {
         width: 100%;
         display: none;
       }
+      //modalのcss
+      .remodal {
+        #select_start {
+          margin : 70px 0;
+        }
+        .btns {
+
+        }
+      }
+      #shift_selected {
+        .selected_time {
+          margin-top : 2%;
+        }
+      }
+        #enter_submit {
+          margin-top : 5%;
+        }
 }
