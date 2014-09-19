@@ -68,9 +68,10 @@ $(function(){
   });
 
 
-  $("#shift_submit").on('click touchend' ,function(ev){
+  $("#enter_submit").on('click touchend' ,function(ev){
     if(window.confirm("これで提出してもいいんですか？")){
             alert("提出しました。");
+            location.href="./../";
     }
   });
 });
