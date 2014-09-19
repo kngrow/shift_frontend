@@ -66,4 +66,7 @@ $(function(){
           $(this).parent().fadeOut();
       }
   });
+
+
+  $("#shift_submit").on('')
 });
