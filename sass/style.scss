@@ -42,12 +42,9 @@ html,body {
       @mixin black {
         color : #000;
       }
-      //リンクの色を変えるアレ
-      a:link { @include black }
-      a:visited { @include black }
-      a:hover { @include black }
-      a:active { @include black }
-
+      #admin_login {
+        background-color : #5C4B51;
+      }
 
 
       //シフトで入ってる日のアレ

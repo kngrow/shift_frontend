@@ -1,7 +1,9 @@
 $(function(){
   $(document).foundation();
 
+
   var date = new Date();
+
 
 
   $('table tr td').bind("touchend",function(ev){
