@@ -34,23 +34,11 @@ html #saturday, body #saturday {
 html #sunday, body #sunday {
   color: #C00;
 }
-/* line 46, ../sass/style.scss */
-html a:link, body a:link {
-  color: #000;
+/* line 45, ../sass/style.scss */
+html #admin_login, body #admin_login {
+  background-color: #5C4B51;
 }
-/* line 47, ../sass/style.scss */
-html a:visited, body a:visited {
-  color: #000;
-}
-/* line 48, ../sass/style.scss */
-html a:hover, body a:hover {
-  color: #000;
-}
-/* line 49, ../sass/style.scss */
-html a:active, body a:active {
-  color: #000;
-}
-/* line 54, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 html #shift_in_allow, body #shift_in_allow {
   width: 0;
   height: 0;
@@ -60,22 +48,22 @@ html #shift_in_allow, body #shift_in_allow {
   position: relative;
   top: -10px;
 }
-/* line 63, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 html #shift_in, body #shift_in {
   background-color: #333333;
   color: #FFFFFF;
   width: 100%;
   display: none;
 }
-/* line 71, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 html .remodal #select_start, body .remodal #select_start {
   margin: 70px 0;
 }
-/* line 79, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 html #shift_selected .selected_time, body #shift_selected .selected_time {
   margin-top: 2%;
 }
-/* line 83, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 html #enter_submit, body #enter_submit {
   margin-top: 5%;
 }
