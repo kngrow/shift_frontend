@@ -71,9 +71,7 @@ html #enter_submit, body #enter_submit {
   margin-top: 5%;
 }
 
-/* line 88, ../sass/style.scss */
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+/* line 89, ../sass/style.scss */
+footer #limit_submit {
+  margin-top: 40%;
 }
