@@ -3,42 +3,45 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #f4e9df;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-/* line 14, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 html .center, body .center {
   padding: 25px 0;
   text-align: center;
 }
-/* line 18, ../sass/style.scss */
-html .h1_padding, body .h1_padding {
-  padding-top: 20px;
+/* line 21, ../sass/style.scss */
+html .top_padding, body .top_padding {
+  padding: 10px 0 0 5%;
 }
-/* line 22, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 html table tr td, body table tr td {
   padding: 4% 0;
 }
-/* line 26, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 html .news, body .news {
   padding-bottom: 4%;
 }
-/* line 31, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 html .news_content, body .news_content {
   font-size: 13px;
   margin-top: 9px;
 }
-/* line 36, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 html #saturday, body #saturday {
   color: #003f8e;
 }
-/* line 39, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 html #sunday, body #sunday {
   color: #C00;
 }
-/* line 45, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 html #admin_login, body #admin_login {
   background-color: #5C4B51;
 }
-/* line 51, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 html #shift_in_allow, body #shift_in_allow {
   width: 0;
   height: 0;
@@ -48,22 +51,27 @@ html #shift_in_allow, body #shift_in_allow {
   position: relative;
   top: -10px;
 }
-/* line 60, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 html #shift_in, body #shift_in {
   background-color: #333333;
   color: #FFFFFF;
   width: 100%;
   display: none;
 }
-/* line 68, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 html .remodal #select_start, body .remodal #select_start {
   margin: 70px 0;
 }
-/* line 76, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 html #shift_selected .selected_time, body #shift_selected .selected_time {
   margin-top: 2%;
 }
-/* line 80, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 html #enter_submit, body #enter_submit {
   margin-top: 5%;
+}
+
+/* line 89, ../sass/style.scss */
+footer #limit_submit {
+  margin-top: 40%;
 }

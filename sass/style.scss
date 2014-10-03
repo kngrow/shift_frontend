@@ -11,12 +11,15 @@ html,body {
   width :100%;
   height : 100%;
   background-color: $back ;
+    position :relative;
+    width:100%;
+    height : 100%;
       .center {
         padding: 25px 0;
         text-align:center;
       }
-      .h1_padding{
-        padding-top : 20px;
+      .top_padding{
+        padding : 10px 0 0 5%;
       }
       //日付のあれ
       table tr td {
@@ -80,4 +83,10 @@ html,body {
         #enter_submit {
           margin-top : 5%;
         }
-}
+        }
+
+        footer {
+                  #limit_submit {
+                      margin-top : 40%;
+                  }
+    }
