@@ -1,129 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ユーザ一覧ページ</title>
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<meta charset="UTF-8" />
+	<title>ユーザー一覧ページ</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="../../css/foundation.min.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/foundation-icons.css" />
 </head>
 <body>
-	<div class="page-header container">
-		<div class="row">
-			<div class="col-md-12">
-				  <h1>admin@example.com
-				   <span class="pull-right">
-						<a href="#" class="btn btn-default">管理者ページ</a>  
-						<a href="#" class="btn btn-lg btn-primary">
-						<span class="glyphicon glyphicon-plus"></span> 追加</a>
-					</span>	  
-				  </h1>
-			</div>
-		</div>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<nav class="tab-bar">
+				<section class="middle tab-bar-section">
+					<h1 class="title">ユーザー一覧</h1>
+				</section>
+				<!-- アイコン-->
+				<section class="right-small">
+					<a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+				</section>
+			</nav>
+			<aside class="right-off-canvas-menu">
+				<ul class="off-canvas-list">
+					<li><label>Users</label></li>
+					<li></li>
+					<li><a href="#">ログアウト</a></li>
+				</ul>
+			</aside>
+			<a class="exit-off-canvas"></a>
+
+
+<ul class="users_list">
+	<li>てんちょー</li>
+	<li>たっつん</li>
+	<li>げんと</li>
+	<li>アニキ</li>
+</li>
+
+
 	</div>
-	<form class="form-horizontal" role="form">
-		<div class="form-group">
-			<div class="col-xs-">
-		</div>
-	</form>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	
-	<div class="container">	  
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<!-- Nav tabs category -->
-			<ul class="nav nav-tabs faq-cat-tabs">
-				<li class="active"><a href="#faq-cat-1" data-toggle="tab">男性</a></li>
-				<li><a href="#faq-cat-2" data-toggle="tab">女性</a></li>
-			</ul>
-			<!-- Tab panes -->
-			<div class="tab-content faq-cat-content">
-				<div class="tab-pane active in fade" id="faq-cat-1">
-					<div class="panel-group" id="accordion-cat-1">
-						<div class="panel panel-default panel-faq">
-							<div class="panel-heading">
-								<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
-									<h4 class="panel-title">
-										<!-- 名前 -->
-										織田信長
-										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-									</h4>
-								</a>
-							</div>
-							<div id="faq-cat-1-sub-1" class="panel-collapse collapse">
-								<div class="panel-body">
-								<!-- 本文-->
-								兄貴だよー
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default panel-faq">
-							<div class="panel-heading">
-								<a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2">
-									<h4 class="panel-title">
-										<!-- 名前 -->
-										hoge
-										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-									</h4>
-								</a>
-							</div>
-							<div id="faq-cat-1-sub-2" class="panel-collapse collapse">
-								<div class="panel-body">
-								<!-- 本文-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="faq-cat-2">
-					<div class="panel-group" id="accordion-cat-2">
-						<div class="panel panel-default panel-faq">
-							<div class="panel-heading">
-								<a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-1">
-									<h4 class="panel-title">
-										<!-- 名前 -->
-										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-									</h4>
-								</a>
-							</div>
-							<div id="faq-cat-2-sub-1" class="panel-collapse collapse">
-								<div class="panel-body">
-									<!-- 本文 -->
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default panel-faq">
-							<div class="panel-heading">
-								<a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-2">
-									<h4 class="panel-title">
-										<!-- 名前 -->
-										<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-									</h4>
-								</a>
-							</div>
-							<div id="faq-cat-2-sub-2" class="panel-collapse collapse">
-								<div class="panel-body">
-									<!-- 本文 -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		  </div>
-		</div>
-	</div>
+</div>
+<script src="../../js/jquery-2.1.1.min.js"></script>
+<script src="../../js/foundation.min.js"></script>
+<script src="../../js/foundation.offcanvas.js"></script>
+<script src="../../js/jquery.transit.min.js"></script>
+<script type="text/javascript"src="../../js/app.js"></script>
 </body>
 </html>
