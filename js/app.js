@@ -80,7 +80,7 @@ $(function(){
 
   //タッチしてシフト入れてる人のやつを取得する
 $("#make tr td").on("click touchend", function(ev){
-   $("#month").text() + $(this).text() + "日";
+  var shift =  $("#month").text() + $(this).text() + "日";
 });
 
 
