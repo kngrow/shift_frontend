@@ -1,76 +1,98 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0,initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="../../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../css/template.css">
-	<link rel="stylesheet" href="../../css/bootstrap-switch.min.css">
+	<meta charset="UTF-8" />
 	<title>シフト作成ページ</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="../../css/foundation.min.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/foundation-icons.css" />
+	<link rel="stylesheet" href="../../css/jquery.remodal.css" />
 </head>
 <body>
-	<header>
-		<div class="col-xs-7 col-sm-5 col-md-7 col-lg-7" id="telop">
-			シフトの作成を行います
-		</div>
-		<button class="col-xs-4 col-sm-4 col-md-4 col-lg-4 btn back" id="logout">
-			戻る
-		</button>
-	</header>
-	<div class="content">
-	<table class="table table-bordered">
-			<thead>
-				<tr>
-					<th>月</th>
-					<th>火</th>
-					<th>水</th>
-					<th>木</th>
-					<th>金</th>
-					<th>土</th>
-					<th>日</th>
+	<div class="remodal-bg">
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<header>
+			<nav class="tab-bar">
+				<section class="middle tab-bar-section">
+					<h1 class="title">シフト作成ページ</h1>
+				</section>
+				<!-- アイコン-->
+				<section class="right-small">
+					<a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+				</section>
+			</nav>
+			<aside class="right-off-canvas-menu">
+				<ul class="off-canvas-list">
+					<li><label>Users</label></li>
+					<li></li>
+					<li><a href="#">ログアウト</a></li>
+				</ul>
+			</aside>
+			<a class="exit-off-canvas"></a>
+		</header>
+
+
+			<h1 class="top_padding" id="month">8月</h1>
+			<table id="make">
+				<thead>
+					<tr>
+						<th>月</th>
+						<th>火</th>
+						<th>水</th>
+						<th>木</th>
+						<th>金</th>
+						<th id="saturday">土</th>
+						<th id="sunday">日</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
 				</tr>
-			</thead>
-			<tbody>
 				<tr>
-					<th>6/23</th>
-					<th>6/24</th>
-					<th>6/25</th>
-					<th>6/26</th>
-					<th>6/27</th>
-					<th>6/28</th>
-					<th>6/29</th>
-				</tr>
-				<tr>
-					<th>6/30</th>
-					<th>6/31</th>
-					<th>7/1</th>
-					<th>7/2</th>
-					<th>7/3</th>
-					<th>7/4</th>
-					<th>7/5</th>
-				</tr>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+			</tr>
+			<tr>
+			<td>26</td>
+			<td>27</td>
+			<td>28</td>
+			<td>29</td>
+			<td>30</td>
+			<td>31</td>
+			<td></td>
+		</tr>
 			</tbody>
 		</table>
 
-		<h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden" id="date"></h1>
-		
-		<div class="incoming hidden">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 tstart" >15:00</div>
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 tend">22:00</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">たっつん</div>
-			<i class="col-xs-2 col-sm-2 col-md-2 col-lg-2 glyphicon glyphicon-remove"></i>
-		</div>
-		<div class="incoming hidden">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 tstart" >17:00</div>
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 tend">22:00</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">アニキ</div>
-			<i class="col-xs-2 col-sm-2 col-md-2 col-lg-2 glyphicon glyphicon-remove"></i>
-		</div>
-		
+
+
+<h1 class="top_padding"></h1>
+				<div id="shift_selected">
+				</div>
+				<button class="btn small small-5 small-offset-1" type="submit" id="enter_submit">保留</button>
+				<button class="btn small small-5 " type="submit" id="enter_submit">確定</button>
+			</div>
 	</div>
-	<script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../../js/bootstrap-switch.js"></script>
-	<script type="text/javascript" src="../../js/app.js"></script>
+</div>
+<script src="../../js/jquery-2.1.1.min.js"></script>
+<script src="../../js/foundation.min.js"></script>
+<script src="../../js/foundation.offcanvas.js"></script>
+<script src="../../js/jquery.transit.min.js"></script>
+<script src="../../js/app.js"></script>
+<script src="../../js/jquery.remodal.js"></script>
 </body>
 </html>

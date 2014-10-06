@@ -39,7 +39,7 @@ $(function(){
   var select_day, select_start , select_end;
 
 //touch時に日付を取得。
-  $("table tr td").on("click touchend", function(ev){
+  $("#shift tr td").on("click touchend", function(ev){
       if( $(this).text()  ){
        select_day = $("#month").text() + $(this).text() + "日";
         $("#modal_month").html( select_day);
@@ -75,5 +75,13 @@ $(function(){
             alert("提出しました。");
             location.href="./../";
     }
+
   });
+
+  //タッチしてシフト入れてる人のやつを取得する
+$("#make tr td").on("click touchend", function(ev){
+  var shift =  $("#month").text() + $(this).text() + "日";
+});
+
+
 });
