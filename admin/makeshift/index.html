@@ -7,13 +7,16 @@
 	<link rel="stylesheet" href="../../css/foundation.min.css" />
 	<link rel="stylesheet" href="../../css/style.css" />
 	<link rel="stylesheet" href="../../css/foundation-icons.css" />
+	<link rel="stylesheet" href="../../css/jquery.remodal.css" />
 </head>
 <body>
+	<div class="remodal-bg">
 	<div class="off-canvas-wrap" data-offcanvas>
 		<div class="inner-wrap">
+			<header>
 			<nav class="tab-bar">
 				<section class="middle tab-bar-section">
-					<h1 class="title">シフト作成</h1>
+					<h1 class="title">シフト作成ページ</h1>
 				</section>
 				<!-- アイコン-->
 				<section class="right-small">
@@ -28,22 +31,67 @@
 				</ul>
 			</aside>
 			<a class="exit-off-canvas"></a>
+		</header>
 
 
-<ul class="users_list">
-	<li>てんちょー</li>
-	<li>たっつん</li>
-	<li>げんと</li>
-	<li>アニキ</li>
-</li>
+			<h1 class="top_padding" id="month">8月</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>月</th>
+						<th>火</th>
+						<th>水</th>
+						<th>木</th>
+						<th>金</th>
+						<th id="saturday">土</th>
+						<th id="sunday">日</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+				</tr>
+				<tr>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+			</tr>
+			<tr>
+			<td>26</td>
+			<td>27</td>
+			<td>28</td>
+			<td>29</td>
+			<td>30</td>
+			<td>31</td>
+			<td></td>
+		</tr>
+			</tbody>
+		</table>
 
 
+
+<h1 class="top_padding">入力したシフト</h1>
+				<div id="shift_selected">
+				</div>
+				<button class="btn small small-10 small-offset-1" type="submit" id="enter_submit">確定</button>
+			</div>
 	</div>
 </div>
 <script src="../../js/jquery-2.1.1.min.js"></script>
 <script src="../../js/foundation.min.js"></script>
 <script src="../../js/foundation.offcanvas.js"></script>
 <script src="../../js/jquery.transit.min.js"></script>
-<script type="text/javascript"src="../../js/app.js"></script>
+<script src="../../js/app.js"></script>
+<script src="../../js/jquery.remodal.js"></script>
 </body>
 </html>
