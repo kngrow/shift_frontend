@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>設定変更ページ</title>
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<meta charset="UTF-8" />
+	<title>ユーザー編集ページ</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="../../css/foundation.min.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/foundation-icons.css" />
 </head>
 <body>
-<div class="container">
-	<div class="page-header">
-		<div class="row">
-			<div class="col-md-12">
-				  <h1>user@example.com
-				   <span class="pull-right">
-						<a href="#" class="btn btn-default">管理者ページ</a> 
-						<a href="#" class="btn btn-default">ユーザ一覧</a> 
-						<a href="#" class="btn btn-lg btn btn-info">
-						<span class="glyphicon glyphicon-share-alt"></span>戻る</a>
-					</span>	  
-				  </h1>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<dl class="dl-horizontal">
-				<dt>ID</dt>
-				<dd>2</dd>
-				<dt>Email</dt>
-				<dd><input name="email" type="text" value="user1@example.com"></dd>
-				<dt>Permissions</dt>
-			<dd><input name="groups[]" type="checkbox" value="Administrator">Administrator</dd>
-			<dd><input name="groups[]" type="checkbox" value="Moderator">Moderator</dd>
-				<dt>Last Login</dt>
-				<dd>null</dd>
-				<dt>Created At</dt>
-				<dd>2014-06-04 01:14:07</dd>
-			</dl>
-		</div>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<nav class="tab-bar">
+				<section class="middle tab-bar-section">
+					<h1 class="title">ユーザー編集ページ</h1>
+				</section>
+				<!-- アイコン-->
+				<section class="right-small">
+					<a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+				</section>
+			</nav>
+			<aside class="right-off-canvas-menu">
+				<ul class="off-canvas-list">
+					<li><label>Users</label></li>
+					<li></li>
+					<li><a href="#">ログアウト</a></li>
+				</ul>
+			</aside>
+			<a class="exit-off-canvas"></a>
+
+<h2 class="top_padding">ユーザー作成</h2>
+メールアドレス
+<input type="email" />
+パスワード
+<input type="password" />
+名前
+<input type="text" />
+
+<button class="button small small-10 small-offset-1 " id="create_user">変更</button>
+
+
 	</div>
 </div>
+<script src="../../js/jquery-2.1.1.min.js"></script>
+<script src="../../js/foundation.min.js"></script>
+<script src="../../js/foundation.offcanvas.js"></script>
+<script src="../../js/jquery.transit.min.js"></script>
+<script type="text/javascript"src="../../js/app.js"></script>
 </body>
 </html>
