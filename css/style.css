@@ -74,8 +74,12 @@ html #enter_submit, body #enter_submit {
 html .users_list, body .users_list {
   padding: 20px 0 0 20px;
 }
+/* line 89, ../sass/style.scss */
+html #create_user, body #create_user {
+  margin-top: 20px;
+}
 
-/* line 92, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 footer #limit_submit {
   margin-top: 40%;
 }

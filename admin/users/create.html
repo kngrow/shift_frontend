@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>登録ページ</title>
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<meta charset="UTF-8" />
+	<title>新規ユーザー作成ページ</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="../../css/foundation.min.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/foundation-icons.css" />
 </head>
 <body>
-	<form class="form-horizontal" role="form">
-		<div class="form-group">
-			<label for="inputEmail3" class="col-sm-2 control-label">苗字</label>
-			<div class="col-xs-10 col-sm-6">
-				<input type="苗字" class="form-control" id="inputEmail3" placeholder="苗字">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="inputEmail3" class="col-sm-2 control-label">名</label>
-			<div class="col-xs-10 col-sm-6">
-				<input type="名" class="form-control" id="inputEmail3" placeholder="名">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="inputEmail3" class="col-sm-2 control-label">メールアドレス</label>
-			<div class="col-xs-10 col-sm-6">
-				<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="inputPassword3" class="col-sm-2 control-label">パスワード</label>
-			<div class="col-xs-10 col-sm-6">
-				<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-			</div>
-		</div>
-		<div class="form-group">
-			<div class=" col-sm-offset-2 col-sm-10">
-				<button type="button" class="btn btn-success col-xs-10 col-sm-5">登録する</button>
-			</div>
-		</div>
-	</form>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<nav class="tab-bar">
+				<section class="middle tab-bar-section">
+					<h1 class="title">新規ユーザー作成ページ</h1>
+				</section>
+				<!-- アイコン-->
+				<section class="right-small">
+					<a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+				</section>
+			</nav>
+			<aside class="right-off-canvas-menu">
+				<ul class="off-canvas-list">
+					<li><label>Users</label></li>
+					<li></li>
+					<li><a href="#">ログアウト</a></li>
+				</ul>
+			</aside>
+			<a class="exit-off-canvas"></a>
+
+<h2 class="top_padding">ユーザー作成</h2>
+メールアドレス
+<input type="email" />
+パスワード
+<input type="password" />
+名前
+<input type="text" />
+
+<button class="button small small-10 small-offset-1 " id="create_user">登録</button>
+
+
+	</div>
+</div>
+<script src="../../js/jquery-2.1.1.min.js"></script>
+<script src="../../js/foundation.min.js"></script>
+<script src="../../js/foundation.offcanvas.js"></script>
+<script src="../../js/jquery.transit.min.js"></script>
+<script type="text/javascript"src="../../js/app.js"></script>
 </body>
 </html>
