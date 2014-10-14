@@ -14,6 +14,14 @@ html,body {
     position :relative;
     width:100%;
     height : 100%;
+    .alert-box {
+      display: none;
+    }
+      small.error{
+        display :none;
+      }
+
+
       .center {
         padding: 25px 0;
         text-align:center;

@@ -18,14 +18,19 @@
       </section>
     </nav>
 </header>
+<div data-alert class="alert-box alert ">
+  入力項目が一致しません。
+  <a href="#" class="close">&times;</a>
+</div>
 <div class="center">ユーザーログイン</div>
 <form>
       <div class="row">
         <div class="small-3 columns">
-          <label for="right-label" class="right inline" required>e-mail</label>
+          <label for="right-label" class="right inline">e-mail</label>
         </div>
         <div class="small-9 columns">
-          <input type="text" id="right-label" placeholder="">
+          <input type="email" id="right-label" class="error" placeholder="">
+          <small class="error">入力されていません</small>
         </div>
       </div>
     </div>
@@ -34,7 +39,8 @@
         <label for="right-label" class="right inline" >password</label>
       </div>
       <div class="small-9 columns">
-        <input type="password" id="right-label" placeholder="">
+        <input type="password" id="right-label" class="error" placeholder="">
+        <small class="error">入力されていません</small>
       </div>
     </div>
     <label for="right-label"><input type="checkbox" class="colomns small-offset-2 small-1"/>記憶する</label>
@@ -48,6 +54,8 @@
 
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/foundation.min.js"></script>
+  <script src="js/foundation.alert.js"></script>
+  <script src="js/modernizr.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

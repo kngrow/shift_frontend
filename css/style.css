@@ -8,40 +8,48 @@ html, body {
   height: 100%;
 }
 /* line 17, ../sass/style.scss */
+html .alert-box, body .alert-box {
+  display: none;
+}
+/* line 20, ../sass/style.scss */
+html small.error, body small.error {
+  display: none;
+}
+/* line 25, ../sass/style.scss */
 html .center, body .center {
   padding: 25px 0;
   text-align: center;
 }
-/* line 21, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 html .top_padding, body .top_padding {
   padding: 10px 0 0 5%;
 }
-/* line 25, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 html table tr td, body table tr td {
   padding: 4% 0;
 }
-/* line 29, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 html .news, body .news {
   padding-bottom: 4%;
 }
-/* line 34, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 html .news_content, body .news_content {
   font-size: 13px;
   margin-top: 9px;
 }
-/* line 39, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 html #saturday, body #saturday {
   color: #003f8e;
 }
-/* line 42, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 html #sunday, body #sunday {
   color: #C00;
 }
-/* line 48, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 html #admin_login, body #admin_login {
   background-color: #5C4B51;
 }
-/* line 54, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 html #shift_in_allow, body #shift_in_allow {
   width: 0;
   height: 0;
@@ -51,35 +59,35 @@ html #shift_in_allow, body #shift_in_allow {
   position: relative;
   top: -10px;
 }
-/* line 63, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 html #shift_in, body #shift_in {
   background-color: #333333;
   color: #FFFFFF;
   width: 100%;
   display: none;
 }
-/* line 71, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 html .remodal #select_start, body .remodal #select_start {
   margin: 70px 0;
 }
-/* line 79, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 html #shift_selected .selected_time, body #shift_selected .selected_time {
   margin-top: 2%;
 }
-/* line 83, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 html #enter_submit, body #enter_submit {
   margin-top: 5%;
 }
-/* line 86, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 html .users_list, body .users_list {
   padding: 20px 0 0 20px;
 }
-/* line 89, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 html #create_user, body #create_user {
   margin-top: 20px;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 footer #limit_submit {
   margin-top: 40%;
 }
